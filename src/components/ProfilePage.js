@@ -1,40 +1,31 @@
 import React, { Component } from 'react'
-import { Grid, Menu, Segment } from 'semantic-ui-react'
+import {  Menu} from 'semantic-ui-react'
+import ImageCarousel from './ImageCarousel';
 
 class ProfilePage extends Component {
-  state = { activeItem: 'bio' }
+  state = { activeItem: 'bio' , content: null}
 
-  handleItemClick = (e, { name }) => this.setState({ activeItem: name })
+    handleItemClick = (e, { name }) => {
+        this.setState({ activeItem: name })
+        if (name === "pics"){
+            this.setState({activeItem: "pics", content: <ImageCarousel/>})
+        }
+    }
 
   render() {
-    const { activeItem } = this.state
+      const { activeItem } = this.state;
 
-    return (
-      <Grid>
-        <Grid.Column width={4}>
-          <Menu fluid vertical tabular>
-            <Menu.Item name='bio' active={activeItem === 'bio'} onClick={this.handleItemClick} />
-            <Menu.Item name='pics' active={activeItem === 'pics'} onClick={this.handleItemClick} />
-            <Menu.Item
-              name='companies'
-              active={activeItem === 'companies'}
-              onClick={this.handleItemClick}
-            />
-            <Menu.Item
-              name='links'
-              active={activeItem === 'links'}
-              onClick={this.handleItemClick}
-            />
-          </Menu>
-        </Grid.Column>
-
-        <Grid.Column stretched width={12}>
-          <Segment>
-              {this.state.activeItem}
-          </Segment>
-        </Grid.Column>
-      </Grid>
-    )
+      return (
+          <div className="">
+          <Menu tabular>
+          <Menu.Item name='bio' active={activeItem === 'bio'} onClick={this.handleItemClick} />
+          <Menu.Item name='photos' active={activeItem === 'photos'} onClick={this.handleItemClick} />
+      </Menu>
+      <div className="Segment">
+      <ImageCarousel/>
+      </div>
+          </div>
+      )
   }
 }
 
