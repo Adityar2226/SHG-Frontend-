@@ -1,0 +1,23 @@
+.feature-card {
+    transition: all .3s !important;
+    box-shadow: 0 1.5rem 4rem rgb(0,0,0, 0.15) !important;
+    border: 1rem;
+}
+.feature-icon {
+    font-size: 60rem;
+    margin-bottom: 3rem;
+}
+
+.feature-card-heading {
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: black;
+    display: block;
+}
+
+.feature-card:hover {
+    transform: translateY(-1.5rem) scale(1.03);
+}

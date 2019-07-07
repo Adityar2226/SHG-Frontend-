@@ -1,61 +1,65 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import logo from "../img/logo-white.png";
+import AboutSection from './AboutSection';
+import FeatureSection from './FeaturesSection';
 
+import {
+    Link
+} from 'react-router-dom';
 
 class Login extends React.Component {
-    state = {name: "", password: ""}
-
-    onClick(event) {
-        console.log("here I am, this is me");
+    state = {
+        name: "",
+        password: ""
     }
 
+    onClick(event) {}
+
     onNameChange(e) {
-        let state = {name: e.target.value, password: this.state.password}
+        let state = {
+            name: e.target.value,
+            password: this.state.password
+        }
         this.setState(state);
     }
 
-
     onPasswordChange(e) {
-        let state = {name: this.state.name, password: e.target.value}
+        let state = {
+            name: this.state.name,
+            password: e.target.value
+        }
         this.setState(state);
     }
 
     render() {
-        return <div  className="ui middle aligned center aligned grid">
-            <div className="column">
-                <h2 className="ui teal image header">
-                    <div className="content">
-                        Log-in to your account
+        return (
+            <div className="home-page">
+              <div className="home-page-header">
+                  <div className="logo-box">
+                    <img src={logo} alt="logo" className="logo"/>
+                  </div>
+                  <div className="text-box">
+                    <h1 className="heading-primary">
+                      <span className="heading-primary-main"> Bhaduli </span>
+                      <span className="heading-primary-sub"> Some awesome text</span>
+                    </h1>
+
+                    <form className="ui form login-form">
+                      <input type="text" name="email" placeholder="email"/>
+                      <input type="text" name="password" placeholder="password"/>
+                    </form>
+                    <div className="btn-landing">
+                      <Link onClick={() => this.onClick()} className=" btn btn-white">Login</Link>
+                      <br/>
+                      <Link className=" btn btn-white">Register</Link>
                     </div>
-                </h2>
-                <form className="ui large form">
-                    <div className="ui stacked segment">
-                        <div className="field">
-                            <div className="ui left icon input">
-                                <i className="user icon"></i>
-                                <input value={this.state.name} onChange={(e)=> {this.onNameChange(e)}} type="text" name="email" placeholder="E-mail address"/>
-                            </div>
-                        </div>
-                        <div className="field">
-                            <div className="ui left icon input">
-                                <i className="lock icon"></i>
-                                <input type="password"  value={this.state.password} onChange={(e)=> {this.onPasswordChange(e)}} name="password" placeholder="Password"/>
-                            </div>
-                        </div>
-                        <Link to="/dashboard" className="ui fluid large teal submit button">Login</Link>
-                    </div>
-
-                    <div className="ui error message"></div>
-
-                </form>
-
-                <div className="ui message">
-                    New to us? <a href="#">Sign Up</a>
+                  </div>
                 </div>
+              <AboutSection/>
+              <FeatureSection/>
             </div>
-        </div>
+               )
     }
 }
-
 
 export default Login;

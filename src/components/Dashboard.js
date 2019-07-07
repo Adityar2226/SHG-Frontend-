@@ -1,6 +1,6 @@
 import React from 'react';
 import  ProfileFilter  from './ProfileFilter';
-import  ProfileCard from './profileCard';
+import  ProfileCard from './ProfileCard';
 import {connect} from 'react-redux';
 
 class  Dashboard extends React.Component {
@@ -9,23 +9,20 @@ class  Dashboard extends React.Component {
 
     renderProfiles() {
         return this.props.profiles.map((p) =>
-            { return  <ProfileCard/> })
+                                       { return  <ProfileCard/> })
     }
 
     render() {
-        const cardsStyle = {
-            height: '100%'
-        }
         return (
-            <div className="ui grid ">
-                <div className="four wide column">
-                    <ProfileFilter/>
+            <div className="ui grid">
+              <div className="four wide column">
+                <ProfileFilter/>
+              </div>
+              <div className="twelve wide column">
+                <div class="ui cards">
+                  {this.renderProfiles()}
                 </div>
-    <div className="twelve wide column">
-            <div class="ui cards" style={cardsStyle}>
-                {this.renderProfiles()}
-            </div>
-            </div>
+              </div>
             </div>
         );
     }
@@ -36,5 +33,3 @@ const mapStateToProps = (state) => {
 }
 
 export default connect(mapStateToProps)(Dashboard);
-
-

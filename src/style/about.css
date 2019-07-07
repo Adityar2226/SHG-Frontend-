@@ -1,0 +1,95 @@
+.section-about{
+    background-color: #f7f7f7;
+    padding: 25rem 15rem;
+    font-size: 3.5rem;
+    font-weight: 700;
+    /* letter-spacing: .8px; */
+    margin-top: -20vh;
+    text-align: center;
+    display: block;
+}
+
+.section-about__heading {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-image: linear-gradient(to right, #EFEAAC , #E2EA08);
+    display: inline-block;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: all .2s;
+    letter-spacing: 2px;
+}
+
+.section-about__heading:hover {
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: .5rem 1rem 2rem rgba(0,0,0, .2);
+}
+
+.section-about__para {
+    text-align: left;
+}
+
+.section-about__para-heading {
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.section-about__para-text {
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+.photo {
+    width: 55%;
+    position: absolute;
+    box-shadow: 0 1.5rem 4rem rgb(0,0,0, 0.4);
+    border-radius: 2px;
+    transition: all .2s;
+    z-index: 10;
+    outline-offset: 2rem;
+}
+
+.about-section-image-1 {
+    top: 0%;
+    left: 10%;
+}
+
+
+.about-section-image-2 {
+    top: 20%;
+    left: 50%;
+}
+
+.about-section-image-3 {
+    top: 60%;
+    left: 30%;
+}
+
+.photo:hover {
+    outline: 1.5rem solid #FFD300;
+    box-shadow: 0 1rem 4rem rgb(0,0,0, 0.4);
+    transform: scale(1.2);
+    z-index: 20;
+}
+
+.about-btn:hover {
+    color: #FFF;
+    background-color: #FFD300;
+    transform: translateY(-3px);
+}
+.about-btn {
+    color: #FFD300;
+    font-size: 1.6rem;
+    display: inline-block;
+    transition: all .2s;
+}
+
+.about-btn:active {
+    transform: translateY(1px);
+}
+
+.about-btn:link,
+.about-btn:visited {
+    border-bottom: 2px solid #FFD300;
+}

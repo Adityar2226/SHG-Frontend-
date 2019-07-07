@@ -21,41 +21,41 @@ class ProfileFilter extends React.Component {
         console.log(this.props.filterProfiles());
     }
 
-     render() {
-         const { activeIndex } = this.state
+    render() {
+        const { activeIndex } = this.state
 
         return (
             <div className="ui container">
-            <Accordion fluid styled>
+              <Accordion fluid styled>
                 <Accordion.Title active={activeIndex === 0} index={0} onClick={this.handleClick}>
-                    <Icon name='dropdown' />
-                    Gender
+                  <Icon name='dropdown' />
+                  Gender
                 </Accordion.Title>
                 <Accordion.Content active={activeIndex === 0}>
-                    <Gender/>
+                  <Gender/>
                 </Accordion.Content>
 
                 <Accordion.Title active={activeIndex === 1} index={1} onClick={this.handleClick}>
-                    <Icon name='dropdown' />
-                    Current City
+                  <Icon name='dropdown' />
+                  Current City
                 </Accordion.Title>
                 <Accordion.Content active={activeIndex === 1}>
-                    <SelectCityDropdown/>
+                  <SelectCityDropdown/>
                 </Accordion.Content>
 
                 <Accordion.Title active={activeIndex === 2} index={2} onClick={this.handleClick}>
-                    <Icon name='dropdown' />
-                    Age
+                  <Icon name='dropdown' />
+                  Age
                 </Accordion.Title>
                 <Accordion.Content active={activeIndex === 2}>
-                    <AgeFilter/>
+                  <AgeFilter/>
                 </Accordion.Content>
-            </Accordion>
-            <div className="ui clearing segment">
-        <div className="ui button primary right aligned" onClick={() => this.onSearchSubmit()}>submit</div>
-        </div>
-        </div>);
-     }
+              </Accordion>
+              <div className="ui clearing segment">
+                <div className="ui button primary right aligned" onClick={() => this.onSearchSubmit()}>submit</div>
+              </div>
+            </div>);
+    }
 }
 
 const mapStateToProps = (state) => {

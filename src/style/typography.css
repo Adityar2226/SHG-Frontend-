@@ -1,0 +1,14 @@
+
+.heading-tertiary {
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.paragraph {
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+p:not(:last-child) {
+    margin-bottom: 3rem;
+}

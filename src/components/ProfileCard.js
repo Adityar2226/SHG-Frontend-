@@ -29,7 +29,7 @@ class ProfileCard extends React.Component {
                             </div>
                             </div>
                          </Modal.Content>
-                        <Modal.Actions>
+-                        <Modal.Actions>
                             <Button color='red'>
                                 <Icon name='remove' /> Cancel
                             </Button>

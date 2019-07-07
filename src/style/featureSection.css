@@ -1,0 +1,26 @@
+.feature-section-container {
+    background-color: #f7f7f7;
+}
+.feature-section {
+    /* padding: 20rem 15rem; */
+    padding: 35rem 10rem;
+    background-image: linear-gradient(to right bottom,
+                                      rgb(239,234,172, 0.4),
+                                      rgba(226,234,8, 0.4)),
+                      url(../img/login.jpg);
+    background-size: cover;
+    background-position: bottom;
+    color: rgba(226,234,8);
+    text-align: center;
+    transform: skewY(-7deg);
+    height: 50%;
+    /* other way of doing same transformation */
+    /* clip-path: polygon(0 0,100vh -20%, 100% -20%, 100%, 100%); */
+    /* clip-path: polygon(0 20vh, 100% 0,100% 75vh, 0 100% ); */
+}
+
+.feature-section > * {
+    transform: skewY(7deg);
+}
+
+
