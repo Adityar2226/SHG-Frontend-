@@ -4,12 +4,15 @@
 .feature-section {
     /* padding: 20rem 15rem; */
     padding: 35rem 10rem;
-    background-image: linear-gradient(to right bottom,
-                                      rgb(239,234,172, 0.4),
-                                      rgba(226,234,8, 0.4)),
-                      url(../img/login.jpg);
+    /* background-image: linear-gradient(to right bottom, rgba(179, 255, 171, .7), */
+    /*                                   rgba(18, 255, 247, .7)), */
+    /*                   url(../img/login.jpg); */
+    background-blend-mode: hue;
+
+    background-image: linear-gradient(to right bottom, #23eae6, #c7faf9),
+                      url(../img/hands.jpeg);
     background-size: cover;
-    background-position: bottom;
+    background-position: center;
     color: rgba(226,234,8);
     text-align: center;
     transform: skewY(-7deg);

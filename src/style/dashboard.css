@@ -1,3 +1,7 @@
-.grid {
+.ui.checkbox {
     font-size: 1.6rem;
+}
+
+.dashboard {
+    background-color: #fafafa;
 }

@@ -1,0 +1,58 @@
+.profile-card {
+    perspective: 150rem ;
+    height: 50rem;
+    position: relative;
+}
+
+.profile-card-side {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    transition: all .8s ease-out;
+    position: absolute;
+    backface-visibility: hidden;
+    top: 0;
+    left: 0;
+}
+
+ .profile-card-side-front {
+     background-color: #fafafa;
+}
+
+ .profile-card-side-back {
+     background-image: linear-gradient(to right bottom, rgba(35, 234, 230,1),
+                                       rgba(199, 250, 249, 1));
+    z-index: 10;
+    transform: rotateY(180deg);
+}
+
+ .profile-card:hover .profile-card-side-front  {
+    transform: rotateY(-180deg);
+    z-index: 20;
+}
+
+ .profile-card:hover .profile-card-side-back  {
+     transform: rotateY(0);
+ }
+
+ .profile-card-image-1 {
+     background-size: cover;
+     height: 23rem;
+     background-blend-mode: color-burn;
+     background-image: linear-gradient(to right bottom, #23eae6, #c7faf9), url(../img/shubhi.jpg);
+     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+     position: relative;
+     z-index: 10;
+ }
+
+ .profile-card-heading {
+     font: 3.6rem;
+     text-transform: uppercase;
+     font-weight: 400rem;
+     background-image: linear-gradient(to right bottom, #23eae6, #c7faf9);
+     position: absolute;
+     right: 0;
+     top: 17rem;
+     display: block;
+     z-index: 20;
+ }
