@@ -7,7 +7,7 @@
 .profile-card-side {
     width: 100%;
     height: 100%;
-    color: #fff;
+    /* color: #fff; */
     transition: all .8s ease-out;
     position: absolute;
     backface-visibility: hidden;
@@ -16,19 +16,21 @@
 }
 
  .profile-card-side-front {
-     background-color: #fafafa;
+     /* background-color: #fafafa; */
 }
 
  .profile-card-side-back {
      background-image: linear-gradient(to right bottom, rgba(35, 234, 230,1),
                                        rgba(199, 250, 249, 1));
-    z-index: 10;
+    /* z-index: 10; */
     transform: rotateY(180deg);
+    text-align: center;
+    /* margin: ; */
 }
 
  .profile-card:hover .profile-card-side-front  {
     transform: rotateY(-180deg);
-    z-index: 20;
+    /* z-index: 20; */
 }
 
  .profile-card:hover .profile-card-side-back  {
@@ -38,11 +40,8 @@
  .profile-card-image-1 {
      background-size: cover;
      height: 23rem;
-     background-blend-mode: color-burn;
-     background-image: linear-gradient(to right bottom, #23eae6, #c7faf9), url(../img/shubhi.jpg);
+     background-image:  url(../img/shubhi.jpg);
      clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-     position: relative;
-     z-index: 10;
  }
 
  .profile-card-heading {
@@ -54,5 +53,53 @@
      right: 0;
      top: 17rem;
      display: block;
-     z-index: 20;
  }
+
+ .profile-card-content {
+     padding: 3rem;
+     /* position: absolute; */
+     width: 80%;
+     margin: 0 auto;
+ }
+
+ .profile-card-content ul {
+     list-style: none;
+     color: grey;
+     text-align: left;
+      }
+
+  li {
+     padding: 1rem;
+     font-size: 1.5rem;
+     text-align: center;
+ }
+
+  .profile-card-content li:not(:last-child) {
+     border-bottom: 1px solid lightgrey;
+ }
+
+ .profile-buttons {
+     /* display: block; */
+     margin-top: 60%;
+ }
+
+ .profile-button {
+     text-decoration: none;
+     display: inline-block;
+     font-size: 2rem;
+     font-weight: 400;
+     margin: 2px auto;
+     padding: 4px 2rem;
+     color: #fafafa;
+     background-color: #0077c0;
+     border-radius: 10px;
+     background: #000000;  /* fallback for old browsers */
+     background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+     background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+ }
+
+ /* .profile-button:hover, */
+ /* .profile-button:visited { */
+ /*     color: #fafafa; */
+ /* } */

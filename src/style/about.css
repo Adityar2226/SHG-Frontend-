@@ -13,7 +13,7 @@
     font-size: 3.5rem;
     text-transform: uppercase;
     font-weight: 700;
-    background-image: linear-gradient(to right, #EFEAAC , #E2EA08);
+    background-image: linear-gradient(to right bottom,  #c7faf9, #23eae6);
     display: inline-block;
     -webkit-background-clip: text;
     color: transparent;
@@ -67,7 +67,7 @@
 }
 
 .photo:hover {
-    outline: 1.5rem solid #FFD300;
+    outline: 1.5rem solid #23eae6;
     box-shadow: 0 1rem 4rem rgb(0,0,0, 0.4);
     transform: scale(1.2);
     z-index: 20;
@@ -75,7 +75,7 @@
 
 .about-btn:hover {
     color: #FFF;
-    background-color: #FFD300;
+    background-color: #23eae6;
     transform: translateY(-3px);
 }
 .about-btn {

@@ -1,4 +1,6 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
+
 import '../style/profileCard.css';
 
 
@@ -13,19 +15,27 @@ class ProfileCard2 extends React.Component {
 
     render() {
         return (
-                <div className="ui card profile-card">
-                <div className="profile-card-side profile-card-side-front profile-card-image-1">
-                <h2>
-                <span className="profile-card-heading">
-                Priesha Negi
-                </span>
-                </h2>
-
-            </div>
-                <div className="profile-card-side profile-card-side-back">
-                Nooooo
-            </div>
+            <div className="ui card profile-card">
+              <div className="profile-card-side profile-card-side-front">
+                <div className="profile-card-image-1">
                 </div>
+                <span className="profile-card-heading">Priesha Negi</span>
+                <div className="profile-card-content">
+                <ul>
+                  <li> Priesha Negi</li>
+                  <li> Dehradun</li>
+                  <li> Engineer</li>
+                  <li> 5'5</li>
+                </ul>
+                </div>
+              </div>
+              <div className="profile-card-side profile-card-side-back">
+                <div className="profile-buttons">
+                  <Link className="profile-button">View Profile</Link>
+                  <Link  className="profile-button">Send a message</Link>
+                </div>
+              </div>
+            </div>
         )}
 
 }

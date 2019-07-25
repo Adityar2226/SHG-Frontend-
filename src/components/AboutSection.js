@@ -3,9 +3,9 @@ import {Link} from 'react-router-dom';
 import  '../style/about.css';
 import  '../style/typography.css';
 import  '../style/util.css';
-import imageOne from "../img/diya.jpg";
-import imageTwo from "../img/dhol.jpg";
-import imageThree from "../img/hands.jpeg";
+import imageOne from "../img/hands-2.jpg";
+import imageTwo from "../img/unsplash-2.jpg";
+import imageThree from "../img/mehndi-2.jpg";
 
 
 class AboutSection extends React.Component {

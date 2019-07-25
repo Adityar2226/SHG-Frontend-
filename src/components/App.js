@@ -1,7 +1,7 @@
 import React from 'react';
 import Login from './Login';
 import Dashboard from './Dashboard';
-import ProfilePage from './ProfilePage';
+import ProfilePage from './ProfilePage2';
 import {
   BrowserRouter,
   Route
