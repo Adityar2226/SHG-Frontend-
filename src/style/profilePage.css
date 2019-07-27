@@ -1,88 +1,78 @@
-.profile-page__container {
-    /* background-color: black; */
-    /* height: 100vh; */
-    background-color: #f7f7f7;
-    /* background: #000000;  /\* fallback for old browsers *\/ */
-    /* background: -webkit-linear-gradient(to right, #434343, #000000); */
-    /* background-image: linear-gradient(to right, #434343, #000000); */
+.profile-page {
+    background: #000000;  /* fallback for old browsers */
+    background-image: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-
-.profile-page__carousal {
-    background-image: linear-gradient(to right, #434343, #000000);
-    /* margin-top: 3rem; */
-    /* width: 100vh; */
+.profile-page-row-2 {
+    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* clip-path: polygon(0 15%, 100% 0,100% 75%, 0 100%); */
+    height: 100vh;
 }
 
-.profile-section {
-    width: 100%;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 1.6rem;
-    box-shadow: 0 1.5rem 4rem rgb(0,0,0, 0.15) ;
-    border: 1rem;
-    padding: 3rem;
-}
-
-.profile-page__container ul {
-    list-style: none;
-    color: grey;
-    text-align: left;
-}
-
-
-.profile-page-photo {
-    height: 95vh;
-    background-blend-mode: hue;
-    background-color: #ffe6d7;
-
-    /* background-image: linear-gradient(to right bottom, #23eae6, #c7faf9) ; */
-    background-size: cover;
-    background-position: center;
-    /* clip-path: polygon(0 0, 100% 0,100% 75vh, 0 100% ); */
-    /* position: relative; */
-}
-
-.profile-column {
-    position: relative;
-}
-
-
-.profile-text {
+.profile-info  {
     display: block;
-    font-size: 6rem;
+    margin-top: 10rem;
+    width: 60%;
+    margin-left: 10rem;
+    /* text-align: left; */
+}
+
+.profile-info h1 {
+    color: #d54d7b; font-family: "Great Vibes", cursive;
+    font-size: 10.5rem;
+    line-height: 10rem;
     font-weight: 400;
-    margin-bottom: 2rem;
-    padding: 5rem;
-    width: 40rem;
-    background: white;
-    position: absolute;
-    top: 30vh;
-    /* left: 5rem; */
+    text-align: center;
+    text-shadow: 0 1px 1px #fff;
+}
+
+.profile-info p {
+    color: #7a7c7f;
+    font-size: 2.9rem;
+    font-family: "Libre Baskerville", serif;
+    line-height: 4.5rem;
+    text-align: left;
+    text-shadow: 0 .1rem .1rem #fff;
+    padding-top: 2rem;
+}
+
+.profile-image-heading {
+    margin-top: 2rem;
 }
 
 .profile-page-image {
-    /* position: absolute; */
-    /* left: 30%; */
-    /* top: 10%; */
+    object-fit: scale-down;
+    padding:2rem;
+    /* width: 90%; */
+    max-width: 100%;
+    max-height: 100%;
     background-size: cover;
-    width: 80%;
+    background-position: top;
+    filter: grayscale(80%);
     box-shadow: 0 1.5rem 4rem rgb(0,0,0, 0.4);
     border-radius: 2px;
+    transition: all 2s;
 }
 
-@keyframes moveRight {
-    0% {
-        opacity: 0;
-        transform: translateX(10rem);
-    }
+.profile-page-image:hover {
+    filter: grayscale(0);
+    animation-duration: .1s;
+    transform: scale(1.05);
+}
 
-    80% {
-        transform: translateX(-10px);
-    }
+.profile-page-image-left {
+    margin-top: 15rem;
+}
 
-    100% {
-        opacity: 1;
-        transform: translate(0)
-    }
+.profile-page-image-right {
+    top: 10rem;
+}
+
+.profile-page-image-left-bottom {
+    margin-top: 0rem;
+}
+
+.profile-page-image-right-bottom {
+    margin-top: 10rem;
 }

@@ -10,42 +10,66 @@ import imageTwo from "../img/hands.jpeg";
 import imageThree from "../img/dhol.jpg";
 import imageFour from "../img/shubhi.jpg";
 import imageFive from "../img/hands-2.jpg";
+import imageSix from "../img/dress.jpg";
 
 class ProfilePage extends Component {
+    state = {text: "I am glad that you liked my profile"}
+
     render() {
-        const bgStyle = {
-            backgroundColor: 'black'
-        };
         return (
-            <div className="ui grid profile-page-photo" >
-              <div className="four wide column" style={bgStyle}>
-            <div className="profile-text">
-              <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin neque ex, malesuada vitae rutrum at condimentum eu est.</h2>
+            <div className="ui grid">
+              <div className="row profile-page">
+                <div className="seven wide column">
+                  <div className="profile-info">
+                    <h1>
+                      About me
+                    </h1>
+                    <p>
+                      I would like to liken you
+                      To a night without starts
+                      Were it not for your eyes
+                      I would liken you
+                      To a sleep without dreams
+                      Were it not for your songs
+                    </p>
+                    <p>
+                      I would like to liken you
+                      To a night without starts
+                      Were it not for your eyes
+                      I would liken you
+                      To a sleep without dreams
+                      Were it not for your songs
+                    </p>
+                    <p>
+                      I would like to liken you
+                      To a night without starts
+                      Were it not for your eyes
+                      I would liken you
+                      To a sleep without dreams
+                      Were it not for your songs
+                    </p>
+                  </div>
+                  {/* <img alt="" src={imageTwo} className="profile-page-image profile-page-image-left"/> */}
+                </div>
+                <div className="nine wide column">
+                  <img alt="" src={imageFour} className="profile-page-image profile-page-image-right"/>
+                </div>
               </div>
-            </div>
-
-              <div className="twelve wide column">
-              <div className="ui compact grid">
-                <div className="row">
-                <div className="eight wide column">
-                  <img src={imageFive} className="profile-page-image"/>
+              <div className="row profile-page-row-2">
+                <div className="seven wide column">
+                  <img alt="" src={imageTwo} className="profile-page-image profile-page-image-left-bottom "/>
                 </div>
-
-                <div className="eight wide column">
-                  <img src={imageFour} className="profile-page-image"/>
+                <div className="nine wide column">
+                  <img alt="" src={imageThree} className="profile-page-image profile-page-image-right-bottom"/>
                 </div>
+              </div>
+              <div className="row profile-page-row-2">
+                <div className="seven wide column">
+                  <img alt="" src={imageFive} className="profile-page-image profile-page-image-left-bottom "/>
                 </div>
-
-            <div className="row">
-                <div className="eight wide column">
-                  <img src={imageTwo} className="profile-page-image"/>
+                <div className="nine wide column">
+                  <img alt="" src={imageOne} className="profile-page-image profile-page-image-right-bottom"/>
                 </div>
-
-                <div className="eight wide column">
-                  <img src={imageThree} className="profile-page-image"/>
-                </div>
-            </div>
-            </div>
               </div>
             </div>
         )
