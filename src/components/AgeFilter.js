@@ -5,17 +5,17 @@ const AgeFilter = () => (
     <div className="ui items">
         <div className="item">
         <div class="ui right labeled input" >
-        <label  class="ui label">Min Age</label>
-        <input type="text" placeholder="18" id="amount"/>
-        <div class="ui basic label">years</div>
+          <label  class="ui label">Min Price</label>
+        <input type="text" placeholder="100" id="amount"/>
+        <div class="ui basic label">Rupees</div>
         </div>
         </div>
 
     <div className="item">
-        <div class="ui right labeled input">
-        <label class="ui label">Max Age</label>
-        <input type="text" placeholder="60" id="amount"/>
-        <div class="ui basic label">years</div>
+        <div className ="ui right labeled input">
+        <label class="ui label">Max Price</label>
+        <input type="text" placeholder="500" id="amount"/>
+        <div class="ui basic label">Rupees</div>
         </div>
         </div>
         </div>

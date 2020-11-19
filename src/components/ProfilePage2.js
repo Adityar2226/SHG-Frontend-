@@ -1,79 +1,39 @@
-import React, {
-    Component
-} from 'react';
-import {
-    Menu
-} from 'semantic-ui-react';
+import React, {Component} from 'react';
+import { Menu} from 'semantic-ui-react';
 import "../style/profilePage.css"
-import imageOne from "../img/garwal.jpg";
-import imageTwo from "../img/hands.jpeg";
-import imageThree from "../img/dhol.jpg";
-import imageFour from "../img/shubhi.jpg";
-import imageFive from "../img/hands-2.jpg";
-import imageSix from "../img/dress.jpg";
 
 class ProfilePage extends Component {
-    state = {text: "I am glad that you liked my profile"}
+  state = {
+    text: "Product details"}
 
-    render() {
-        return (
-            <div className="ui grid">
-              <div className="row profile-page">
+  render() {
+    return (
+      <div className="ui grid">
+              <div className="row">
                 <div className="seven wide column">
                   <div className="profile-info">
                     <h1>
-                      About me
+                      Product details
                     </h1>
-                    <p>
-                      I would like to liken you
-                      To a night without starts
-                      Were it not for your eyes
-                      I would liken you
-                      To a sleep without dreams
-                      Were it not for your songs
-                    </p>
-                    <p>
-                      I would like to liken you
-                      To a night without starts
-                      Were it not for your eyes
-                      I would liken you
-                      To a sleep without dreams
-                      Were it not for your songs
-                    </p>
-                    <p>
-                      I would like to liken you
-                      To a night without starts
-                      Were it not for your eyes
-                      I would liken you
-                      To a sleep without dreams
-                      Were it not for your songs
-                    </p>
+                    <ul>
+                      <li>Jam is a condiment. It is usually made from pressed fruit, sugar, and sometimes pectin. Most jams are cooked. After making, jam is normally put into an airtight jar.</li>
+                      <li>We use traditional techniques including cooking the fruit in small batches using copper pans to make the highest consistent quality – each batch produces only 150 jars of product.</li>
+
+                      <li>The making of preserves begins with an initial mix containing not less than 45 parts by weight fruit for every 55 parts by weight sugar solids. The sugar solids are added after the fruit is crushed, and the mix is then cooked. Cooking may be done in a highly controlled vacuum kettle, in which flavour
+                      volatiles are captured and returned to the product.</li>
+                      <li>Easy to spread, enjoy this preserve on toast, biscuits, muffins, cheese, pastries or even as a cake filling.</li>
+                      <li>Visit our store to see all varieties</li>
+            </ul>
                   </div>
                   {/* <img alt="" src={imageTwo} className="profile-page-image profile-page-image-left"/> */}
                 </div>
                 <div className="nine wide column">
-                  <img alt="" src={imageFour} className="profile-page-image profile-page-image-right"/>
-                </div>
-              </div>
-              <div className="row profile-page-row-2">
-                <div className="seven wide column">
-                  <img alt="" src={imageTwo} className="profile-page-image profile-page-image-left-bottom "/>
-                </div>
-                <div className="nine wide column">
-                  <img alt="" src={imageThree} className="profile-page-image profile-page-image-right-bottom"/>
-                </div>
-              </div>
-              <div className="row profile-page-row-2">
-                <div className="seven wide column">
-                  <img alt="" src={imageFive} className="profile-page-image profile-page-image-left-bottom "/>
-                </div>
-                <div className="nine wide column">
-                  <img alt="" src={imageOne} className="profile-page-image profile-page-image-right-bottom"/>
+                  <img alt="" src="https://source.unsplash.com/featured/?jam,food" className="profile-page-image profile-page-image-right"/>
                 </div>
               </div>
             </div>
-        )
-    }
+    )
+  }
 }
 
 export default ProfilePage;

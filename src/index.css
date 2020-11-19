@@ -32,8 +32,7 @@ body {
     height: 95vh;
     background-blend-mode: hue;
 
-    background-image: linear-gradient(to right bottom, #23eae6, #c7faf9),
-                      url(img/mehndi-2.jpg);
+    background-image: url("https://source.unsplash.com/featured/?food,red");
     background-size: cover;
     background-position: center;
     clip-path: polygon(0 0, 100% 0,100% 75vh, 0 100% );

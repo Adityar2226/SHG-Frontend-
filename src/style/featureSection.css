@@ -9,8 +9,7 @@
     /*                   url(../img/login.jpg); */
     background-blend-mode: hue;
 
-    background-image: linear-gradient(to right bottom, #23eae6, #c7faf9),
-                      url(../img/hands.jpeg);
+    background-image: url(https://source.unsplash.com/featured/?jam,red);
     background-size: cover;
     background-position: center;
     color: rgba(226,234,8);

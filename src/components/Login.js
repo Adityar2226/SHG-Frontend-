@@ -1,11 +1,9 @@
 import React from 'react';
-import logo from "../img/logo-white.png";
 import AboutSection from './AboutSection';
 import FeatureSection from './FeaturesSection';
+import history from './history/History';
 
-import {
-    Link
-} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 class Login extends React.Component {
     state = {
@@ -13,7 +11,10 @@ class Login extends React.Component {
         password: ""
     }
 
-    onClick(event) {}
+    onClick = () => {
+        history.push("/dashboard");
+    }
+
 
     onNameChange(e) {
         let state = {
@@ -35,21 +36,18 @@ class Login extends React.Component {
         return (
             <div className="home-page">
               <div className="home-page-header">
-                  <div className="logo-box">
-                    <img src={logo} alt="logo" className="logo"/>
-                  </div>
                   <div className="text-box">
                     <h1 className="heading-primary">
-                      <span className="heading-primary-main"> Bhaduli </span>
-                      <span className="heading-primary-sub"> Some awesome text</span>
+                      <span className="heading-primary-main"> SHGProducts </span>
+                      <span className="heading-primary-sub"> Original is here! </span>
                     </h1>
 
                     <form className="ui form login-form">
-                      <input type="text" name="email" placeholder="email"/>
-                      <input type="text" name="password" placeholder="password"/>
+                      <input type="text" name="email" placeholder="Email"/>
+                      <input type="text" name="password" placeholder="Password"/>
                     </form>
                     <div className="btn-landing">
-                      <Link onClick={() => this.onClick()} className=" btn btn-white">Login</Link>
+                      <Link to="/dashboard" className=" btn btn-white">Login</Link>
                       <br/>
                       <Link className=" btn btn-white">Register</Link>
                     </div>
@@ -57,6 +55,7 @@ class Login extends React.Component {
                 </div>
               <AboutSection/>
               <FeatureSection/>
+
             </div>
                )
     }

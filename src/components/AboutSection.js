@@ -3,10 +3,6 @@ import {Link} from 'react-router-dom';
 import  '../style/about.css';
 import  '../style/typography.css';
 import  '../style/util.css';
-import imageOne from "../img/hands-2.jpg";
-import imageTwo from "../img/unsplash-2.jpg";
-import imageThree from "../img/mehndi-2.jpg";
-
 
 class AboutSection extends React.Component {
     render() {
@@ -18,24 +14,22 @@ class AboutSection extends React.Component {
               <div className="ui left aligned grid">
                 <div className="two column row">
                 <div className="column">
-                    <h3 className="heading-tertiary">YOU'RE GOING TO FALL IN LOVE WITH NATURE</h3>
+                    <h3 className="heading-tertiary">YOU'RE GOING TO FALL IN LOVE WITH PRODUCTS</h3>
                     <p className="paragraph">
-                      Ut enim blandit volutpat maecenas volutpat blandit. Viverra adipiscing at in tellus integer feugiat scelerisque varius morbi enim nunc, faucibus a pellentesque sit amet, porttitor eget dolor morbi non arcu.
-                      Nisl, condimentum id venenatis a, condimentum vitae sapien pellentesque habitant morbi tristique senectus et netus et malesuada. Tellus integer feugiat scelerisque varius morbi enim nunc, faucibus a pellentesque sit amet.
+                      The products we provide are totally hand-made and are Upto the customer's demand. All our products are 100% Natural and Authentic.
                     </p>
 
-                    <h3 className="heading-tertiary">LIVE ADVENTURES LIKE YOU NEVER HAVE BEFORE</h3>
+                    <h3 className="heading-tertiary">PURCHASE PRODUCTS LIKE YOU NEVER HAD BEFORE</h3>
                     <p className="paragraph">
-                      Duis tristique sollicitudin nibh sit! Convallis a cras semper auctor neque, vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh venenatis cras sed felis eget.
-                      Arcu dui vivamus arcu felis, bibendum ut tristique et, egestas quis ipsum suspendisse ultrices gravida dictum fusce ut placerat orci nulla pellentesque dignissim. A pellentesque sit amet, porttitor eget dolor!
+                      Our products cover a wide range.So get ready to enjoy the originality of products .
                     </p>
                   <Link className="about-btn margin-top-medium">More Detail &rarr;</Link>
                 </div>
                 <div className="column right">
                   <div className="ui container">
-                  <img className="photo about-section-image-1"   src={imageOne}/>
-                    <img className=" photo about-section-image-2"  src={imageTwo}/>
-                    <img className="photo about-section-image-3"  src={imageThree}/>
+                    <img className="photo about-section-image-1"   src="https://source.unsplash.com/featured/?jam"/>
+                    <img className=" photo about-section-image-2"  src="https://source.unsplash.com/featured/?pickle"/>
+                    <img className="photo about-section-image-3"  src="https://source.unsplash.com/featured/?food"/>
                   </div>
             </div>
                 </div>

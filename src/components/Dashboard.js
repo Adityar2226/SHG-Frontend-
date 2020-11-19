@@ -1,16 +1,16 @@
 import React from 'react';
 import  ProfileFilter  from './ProfileFilter';
-import  ProfileCard2 from './ProfileCard2';
+import  ProfileCard from './ProfileCard';
 import {connect} from 'react-redux';
 import '../style/dashboard.css';
 
 class  Dashboard extends React.Component {
-    state = {activeIndex: 0}
+    state = {activeIndex:0}
 
 
     renderProfiles() {
         return this.props.profiles.map((p) =>
-                                       { return  <ProfileCard2/> })
+                                       { return  <ProfileCard data={p}/> })
     }
 
     render() {
@@ -20,7 +20,7 @@ class  Dashboard extends React.Component {
                 <ProfileFilter/>
               </div>
               <div className="twelve wide column">
-                <div class="ui cards">
+                <div className="ui cards">
                   {this.renderProfiles()}
                 </div>
               </div>

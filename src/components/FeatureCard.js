@@ -8,15 +8,15 @@ class FeatureCard extends React.Component {
 
     render() {
         return (
-              <div class="ui card feature-card">
-                <div class="content" text-align="center">
+              <div className="ui card feature-card">
+                <div className ="content" text-align="center">
                   <Icon name={this.props.iconName}  size='huge'/>
-                  <a class="header" className="feature-card-heading">Explore the world</a>
-                  <div class="description" textAlign="center">
-                    Varius duis at consectetur lorem donec massa sapien, faucibus et molestie ac. Dictumst quisque sagittis, purus sit amet volutpat consequat, mauris nunc congue nisi, vitae suscipit tellus mauris a diam!
+                  <a className="header" className="feature-card-heading">Home </a>
+                  <div className ="description" text-align="center">
+                   Hi welcome to feature cards.
                   </div>
                 </div>
-                <div class="extra content">
+                <div className="extra content">
                 </div>
               </div>);
     }

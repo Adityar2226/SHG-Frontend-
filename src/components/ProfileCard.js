@@ -11,6 +11,8 @@ class ProfileCard extends React.Component {
     handleHide = () => {
         this.setState({active: false}) }
 
+    jams = ["Apricot Jam", "Apple Jam", "Mixed Jam"]
+
     render() {
         const { active } = this.state
 
@@ -19,42 +21,23 @@ class ProfileCard extends React.Component {
                     <Dimmer className="ui dimmer" active={active}>
                       <div className="content">
                         <div className="center">
-
-                          <Modal trigger={<Button className="ui inverted">Add Friend</Button>} closeIcon>
-                            <Header icon='archive' content='Send a message' />
-                            <Modal.Content>
-                              <div class="ui form">
-                                <div class="field">
-                                  <textarea placeholder="......"></textarea>
-                                </div>
-                              </div>
-                            </Modal.Content>
-                            -                        <Modal.Actions>
-                                   <Button color='red'>
-                                     <Icon name='remove' /> Cancel
-                                   </Button>
-                                   <Button color='green'>
-                                     <Icon name='checkmark' /> Send Message
-                                   </Button>
-                                 </Modal.Actions>
-                          </Modal>
-                          <Link to="/profile" className="ui inverted button">View Profile</Link>
+                          <Link to="/profile" className="ui inverted button">Product details</Link>
                         </div>
                       </div>
                     </Dimmer>
-                    <Image src="matthew.png"/>
+                    <Image src="https://source.unsplash.com/featured/?jam,food" />
                   </Dimmer.Dimmable>
 
-                  <div class="content">
-                    <a class="header">Team Fu</a>
-                    <div class="meta">
-                      <span class="date">Created in Sep 2014</span>
+                  <div className="content">
+                    <a className="header">{this.jams[Math.floor(Math.random() * 3) + 1  ]}</a>
+                    <div className="meta">
+                      <span className="date">Price: 300 rupees</span>
                     </div>
                   </div>
-                  <div class="extra content">
+                  <div className="extra content">
                     <a>
-                      <i class="users icon"></i>
-                      2 Members
+                      <i className="star icon"></i>
+                      {Math.floor(Math.random() * 500) + 1  } reviews
                     </a>
                   </div>
                 </div>)

@@ -12,7 +12,7 @@ export default class Gender extends React.Component {
                 <Form>
                 <Form.Field>
                 <Radio
-            label='Male'
+            label='Pickles '
             name='radioGroup'
             value='this'
             checked={this.state.value === 'this'}
@@ -21,13 +21,32 @@ export default class Gender extends React.Component {
                 </Form.Field>
                 <Form.Field>
                 <Radio
-            label='Female'
+            label='Spices'
             name='radioGroup'
             value='that'
             checked={this.state.value === 'that'}
             onChange={this.handleChange}
                 />
                 </Form.Field>
+                <Form.Field>
+                           <Radio
+                            label='Jam'
+                            name='radioGroup'
+                            value='that'
+                            checked={this.state.value === 'that'}
+                            onChange={this.handleChange}
+                                />
+                                </Form.Field>
+                                <Form.Field>
+                                                           <Radio
+                                                            label='Jewellery'
+                                                            name='radioGroup'
+                                                            value='that'
+                                                            checked={this.state.value === 'that'}
+                                                            onChange={this.handleChange}
+                                                                />
+                                                                </Form.Field>
+
                 </Form>
         )
     }
