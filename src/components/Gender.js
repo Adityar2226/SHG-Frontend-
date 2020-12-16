@@ -41,8 +41,8 @@ export default class Gender extends React.Component {
                                                            <Radio
                                                             label='Jewellery'
                                                             name='radioGroup'
-                                                            value='that'
-                                                            checked={this.state.value === 'that'}
+                                                            value='this'
+                                                            checked={this.state.value === 'this'}
                                                             onChange={this.handleChange}
                                                                 />
                                                                 </Form.Field>
