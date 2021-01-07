@@ -16,6 +16,7 @@ class Login extends React.Component {
     }
 
 
+
     onNameChange(e) {
         let state = {
             name: e.target.value,
@@ -49,7 +50,7 @@ class Login extends React.Component {
                     <div className="btn-landing">
                       <Link to="/dashboard" className=" btn btn-white">Login</Link>
                       <br/>
-                      <Link className=" btn btn-white">Register</Link>
+                      <Link to="/register" className=" btn btn-white">Register</Link>
                     </div>
                   </div>
                 </div>

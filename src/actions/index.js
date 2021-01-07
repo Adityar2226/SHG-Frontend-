@@ -14,3 +14,13 @@ export const filterProfiles = criteria => {
                 {firstName:"marci", gender: "female",  city: "Delhi"}]
     }
 }
+/* Action creator*/
+export const createId = (name,password,ConfirmPassword) => {
+return {
+type: 'CREATE_ID',
+payload: {
+Name:name,
+Password:password,
+ConfirmPassword:ConfirmPassword}
+};
+};

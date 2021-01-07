@@ -8,7 +8,16 @@ const profilesReducer = (profiles=[], action) => {
     return profiles;
     }
 
+const checkId = (previousId=[], action) => {
+console.log("inside check id reducer");
+if (action.type === 'CREATE_ID'){
+      return action.payload;
+}
+        return previousId;
+}
+
 export default combineReducers({
-    profiles: profilesReducer
+    profiles: profilesReducer,
+    login: checkId
 })
 
