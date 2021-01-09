@@ -3,21 +3,22 @@ import Login from './Login';
 import Dashboard from './Dashboard';
 import ProfilePage from './ProfilePage2';
 import Register from './Register';
+import history from './history/History'
 import {
-  BrowserRouter,
-  Route
+    Route,
+    Router
 } from 'react-router-dom';
 
 const App = () => {
-  return (
-    <div>
-        <BrowserRouter>
-            <Route path="/" exact component={Login}/>
-            <Route path="/dashboard" component={Dashboard}/>
-            <Route path="/profile" component={ProfilePage}/>
-             <Route path="/register" component={Register}/>
-            </BrowserRouter>
-        </div>)
+    return (
+            <Router history={history}>
+                <div>
+                    <Route path="/" exact component={Login}/>
+                    <Route path="/dashboard" component={Dashboard}/>
+                    <Route path="/profile" component={ProfilePage}/>
+                    <Route path="/register" component={Register}/>
+                </div>
+            </Router> )
 };
 
 export default App;
