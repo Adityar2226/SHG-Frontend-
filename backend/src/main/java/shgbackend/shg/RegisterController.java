@@ -7,24 +7,28 @@ import java.util.Optional;
 
 
 @RestController
-public class LoginController {
+public class RegisterController {
 
     private CustomerRepository repo;
 
     @Autowired
-    public  LoginController(CustomerRepository repo){
+    public RegisterController(CustomerRepository repo) {
         this.repo = repo;
     }
-//creating new data
-   @PostMapping("/login")
-   Customer login(@RequestBody Credentials data) {
+// creating new data
+    @PostMapping("/register")
+
+    Customer register(@RequestBody RegisterInfo data) {
         Customer customer = new Customer(data.getUsername(), data.getPassword());
         return repo.save(customer);
     }
 
-   //getting data here
-    @GetMapping("/login/{id}")
-    Customer login(@PathVariable Long id) {
+   //getting data by id
+    @GetMapping("/register/{id}")
+    Customer register(@PathVariable Long id) {
         return repo.findById(id).get();
+
     }
+
 }
+

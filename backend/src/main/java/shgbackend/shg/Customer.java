@@ -13,13 +13,21 @@ class Customer {
     private String name;
     private String password;
 
-    public Customer() {}
+
 
     public Customer(String name, String password) {
 
         this.name = name;
         this.password = password;
+
     }
+
+    public Customer() {
+
+
+    }
+
+
 
     public Long getId() {
         return this.id;
@@ -33,6 +41,8 @@ class Customer {
         return this.password;
     }
 
+
+
     public void setId(Long id) {
         this.id = id;
     }
@@ -45,10 +55,12 @@ class Customer {
         this.password = password;
     }
 
+
+
     @Override
     public boolean equals(Object o) {
 
-        if (this == o)
+         if (this == o)
             return true;
         if (!(o instanceof Customer))
             return false;
@@ -64,6 +76,6 @@ class Customer {
 
     @Override
     public String toString() {
-        return "Employee{" + "id=" + this.id + ", name='" + this.name + '\'' + ", role='" + this.password + '\'' + '}';
-    }
-}
+        return "Employee{" + "id=" + this.id + ", name=" + this.name + '\'' + ", role=" + this.password + '\'' + "city="+"}";
+    }}
+

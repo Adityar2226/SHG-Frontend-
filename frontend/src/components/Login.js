@@ -1,4 +1,4 @@
-import React from 'react';
+  import React from 'react';
 import AboutSection from './AboutSection';
 import FeatureSection from './FeaturesSection';
 import history from './history/History';
@@ -48,7 +48,7 @@ class Login extends React.Component {
                       <input type="text" name="password" placeholder="Password"/>
                     </form>
                     <div className="btn-landing">
-                      <Link to="/dashboard" className=" btn btn-white">Login</Link>
+                      <Link to="/createLogin" className=" btn btn-white">Login</Link>
                       <br/>
                       <Link to="/register" className=" btn btn-white">Register</Link>
                     </div>

@@ -15,8 +15,17 @@ export const filterProfiles = criteria => {
     }
 }
 /* Action creator*/
-export const createId = (name, password, ConfirmPassword) => {
-    //Make some backend call here
-    let user = {name: "John Doe", userId: "some-user-id"}
-    return {type: "REGISTER", payload: user}
-};
+export const createId = user => {
+//make some backend call here
+console.log(user)
+ return {
+ type:"REGISTER",
+ payload: user
+ }};
+ export const LoginId = user => {
+ //make some backend call here
+ console.log(user)
+  return {
+  type:"Login",
+  payload: user
+  }};

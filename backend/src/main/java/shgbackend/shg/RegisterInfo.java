@@ -1,10 +1,10 @@
 package shgbackend.shg;
 
-public class Credentials {
+public class RegisterInfo {
     private final String username;
     private final String password;
 
-    public Credentials(String username, String password){
+    public RegisterInfo(String username, String password){
 
         this.username = username;
         this.password = password;
@@ -18,4 +18,5 @@ public class Credentials {
         return password;
     }
 }
+
 
